@@ -5,8 +5,10 @@ function Home() {
   return (
     <>
       <div>Home</div>
-      <button onClick={() => navigate('order-summary')}>place order</button><br/>
-      <button onClick={() => navigate('order-summary', { replace: true })}> back button that replaces history</button>
+      <button onClick={() => navigate('order-summary')}>place order</button><br />
+      <button onClick={() => navigate('order-summary', { replace: true })}>
+        pushes a route and then erases the route where it came from
+      </button>
     </>
   )
 }
